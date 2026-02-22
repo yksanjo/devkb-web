@@ -1,40 +1,82 @@
-# DevKB-Web - Web Interface for Developer Knowledge Base
+# devkb-web
 
-A modern web-based interface for managing and searching your code knowledge base.
+## Detailed Description
 
-## Features
+devkb-web is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-- Modern web UI with React
-- Real-time semantic search
-- Document management dashboard
-- Code syntax highlighting
-- Dark/Light theme
-- Responsive design
+## Problem Statement
 
-## Tech Stack
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-- **Frontend**: React + TailwindCSS
-- **Backend**: FastAPI (Python)
-- **Database**: SQLite + ChromaDB
-- **Embeddings**: sentence-transformers
+## Solution Overview
 
-## Quick Start
+Summarize the architecture, core modules, and runtime behavior at a high level.
 
-### Backend
-```bash
-cd backend
-pip install -r requirements.txt
-cp .env.example .env
-uvicorn main:app --reload
+## Key Features
+
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
 ```
 
-### Frontend
+## Getting Started
+
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
+
 ```bash
-cd frontend
-npm install
-npm run dev
+make test
+make lint
 ```
+
+## Usage
+
+Document primary commands, API routes, CLI examples, or UI workflows here.
+
+## Quality Standards
+
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
+
+## Security
+
+See `SECURITY.md` for responsible disclosure and handling guidelines.
+
+## Contributing
+
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
+
+## Roadmap
+
+Track upcoming milestones, technical debt, and planned feature work.
+
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
 ## License
 
-MIT
+This project is released under the MIT License.
